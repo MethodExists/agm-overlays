@@ -85,7 +85,7 @@ export interface latLngPlus{
   onChanges( changes ){}
 
   onChangesOverride( changes ){
-    if( changes.latitude || changes.longitude || changes.zIndex ){
+    if( changes.latitude || changes.longitude || changes.zIndex || changes.bounds ){
       this.overlayView.latitude = this.latitude
       this.overlayView.longitude = this.longitude
       this.overlayView.zIndex = this.zIndex
